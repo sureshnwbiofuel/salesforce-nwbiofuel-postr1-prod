@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vehicle Features --></label>
+    <name>Vehicle_Features__c</name>
+    <picklistValues>
+        <masterLabel>551</masterLabel>
+        <translation><!-- 551 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brown Grease</masterLabel>
+        <translation><!-- Brown Grease --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liftgate</masterLabel>
+        <translation><!-- Liftgate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Clearance</masterLabel>
+        <translation><!-- Low Clearance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portable Unit</masterLabel>
+        <translation><!-- Portable Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pressure Washer</masterLabel>
+        <translation><!-- Pressure Washer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Used Cooking Oil</masterLabel>
+        <translation><!-- Used Cooking Oil --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

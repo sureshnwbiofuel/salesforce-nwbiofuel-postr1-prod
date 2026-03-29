@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>daily_uco_list_view</fullName>
+    <columns>Account</columns>
+    <columns>Services_Needed__c</columns>
+    <columns>Work_Order_Number_Display__c</columns>
+    <columns>Optimo_Date__c</columns>
+    <columns>Status</columns>
+    <columns>Collected_Gallons__c</columns>
+    <columns>Container_Size_1__c</columns>
+    <columns>Container_Size_2__c</columns>
+    <columns>Volume__c</columns>
+    <columns>Gallons_Per_Month__c</columns>
+    <columns>Daily_Fill_Rate__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Last_Collected_Gallons__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Skills__c</field>
+        <operation>equals</operation>
+        <value>UCO,CM</value>
+    </filters>
+    <filters>
+        <field>Optimo_Date__c</field>
+        <operation>equals</operation>
+        <value>3/16/2026</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>Unscheduled</value>
+    </filters>
+    <label>Daily UCO List View</label>
+</ListView>

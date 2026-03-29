@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Notification Method --></label>
+    <name>Notification_Method__c</name>
+    <picklistValues>
+        <masterLabel>CR: Both</masterLabel>
+        <translation><!-- CR: Both --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR: Email</masterLabel>
+        <translation><!-- CR: Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR: Phone</masterLabel>
+        <translation><!-- CR: Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR: Text Message</masterLabel>
+        <translation><!-- CR: Text Message --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Notify</masterLabel>
+        <translation><!-- Do Not Notify --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notify Both</masterLabel>
+        <translation><!-- Notify Both --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notify Email</masterLabel>
+        <translation><!-- Notify Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notify Phone</masterLabel>
+        <translation><!-- Notify Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notify Text</masterLabel>
+        <translation><!-- Notify Text --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

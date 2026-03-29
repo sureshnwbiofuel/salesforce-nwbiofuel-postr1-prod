@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Services Needed</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Services</value>
+    </caseValues>
+    <layouts>
+        <layout>BGT Service Needed Layout</layout>
+        <sections>
+            <label><!-- Access Information --></label>
+            <section>Access Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Follow-Up Information --></label>
+            <section>Follow-Up Information</section>
+        </sections>
+        <sections>
+            <label><!-- GRD Information --></label>
+            <section>GRD Information</section>
+        </sections>
+        <sections>
+            <label><!-- Skills and Vehicle Information --></label>
+            <section>Skills and Vehicle Information</section>
+        </sections>
+        <sections>
+            <label><!-- Time Window Information --></label>
+            <section>Time Window Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HYD Service Needed Layout</layout>
+        <sections>
+            <label><!-- Access Information --></label>
+            <section>Access Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Follow-Up Information --></label>
+            <section>Follow-Up Information</section>
+        </sections>
+        <sections>
+            <label><!-- Skills and Vehicle Information --></label>
+            <section>Skills and Vehicle Information</section>
+        </sections>
+        <sections>
+            <label><!-- Time Window Information --></label>
+            <section>Time Window Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>INT Service Needed Layout</layout>
+        <sections>
+            <label><!-- Access Information --></label>
+            <section>Access Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Follow-Up Information --></label>
+            <section>Follow-Up Information</section>
+        </sections>
+        <sections>
+            <label><!-- GRD Information --></label>
+            <section>GRD Information</section>
+        </sections>
+        <sections>
+            <label><!-- Skills and Vehicle Information --></label>
+            <section>Skills and Vehicle Information</section>
+        </sections>
+        <sections>
+            <label><!-- Time Window Information --></label>
+            <section>Time Window Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UCO Service Needed Layout</layout>
+        <sections>
+            <label><!-- Access Information --></label>
+            <section>Access Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Follow-Up Information --></label>
+            <section>Follow-Up Information</section>
+        </sections>
+        <sections>
+            <label><!-- Skills and Vehicle Information --></label>
+            <section>Skills and Vehicle Information</section>
+        </sections>
+        <sections>
+            <label><!-- Time Window Information --></label>
+            <section>Time Window Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Waste Run Service Needed Layout</layout>
+        <sections>
+            <label><!-- Access Information --></label>
+            <section>Access Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Skills and Vehicle Information --></label>
+            <section>Skills and Vehicle Information</section>
+        </sections>
+        <sections>
+            <label><!-- Time Window Information --></label>
+            <section>Time Window Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Drain Cleaning --></description>
+        <label><!-- Drain Cleaning --></label>
+        <name>Drain_Cleaning</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Grease Trap or Brown Grease --></description>
+        <label><!-- Grease Trap --></label>
+        <name>Grease_Trap</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Interceptor --></description>
+        <label><!-- Interceptor --></label>
+        <name>Interceptor</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used Cooking Oil or Yellow Grease --></description>
+        <label><!-- Used Cooking Oil --></label>
+        <name>Used_Cooking_Oil</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Waste Run --></description>
+        <label><!-- Waste Run --></label>
+        <name>Waste_Run</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

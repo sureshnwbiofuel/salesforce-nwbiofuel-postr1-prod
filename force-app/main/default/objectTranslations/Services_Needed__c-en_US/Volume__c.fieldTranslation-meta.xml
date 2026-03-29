@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- GRD/HYD/UCO service Size --></help>
+    <label><!-- Volume / Capacity --></label>
+    <name>Volume__c</name>
+</CustomFieldTranslation>

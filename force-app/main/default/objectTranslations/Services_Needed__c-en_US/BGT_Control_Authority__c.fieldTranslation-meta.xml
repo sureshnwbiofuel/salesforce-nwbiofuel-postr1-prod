@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Control Authority --></label>
+    <name>BGT_Control_Authority__c</name>
+    <picklistValues>
+        <masterLabel>BES</masterLabel>
+        <translation><!-- BES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRWD</masterLabel>
+        <translation><!-- CRWD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CWS</masterLabel>
+        <translation><!-- CWS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Albany</masterLabel>
+        <translation><!-- City of Albany --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Beaverton</masterLabel>
+        <translation><!-- City of Beaverton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Canby</masterLabel>
+        <translation><!-- City of Canby --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Centralia</masterLabel>
+        <translation><!-- City of Centralia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Corvallis</masterLabel>
+        <translation><!-- City of Corvallis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Eugene</masterLabel>
+        <translation><!-- City of Eugene --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Gresham</masterLabel>
+        <translation><!-- City of Gresham --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of McMinnville</masterLabel>
+        <translation><!-- City of McMinnville --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Milwaukie</masterLabel>
+        <translation><!-- City of Milwaukie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Monmouth</masterLabel>
+        <translation><!-- City of Monmouth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Newberg</masterLabel>
+        <translation><!-- City of Newberg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Salem</masterLabel>
+        <translation><!-- City of Salem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Sandy</masterLabel>
+        <translation><!-- City of Sandy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Seattle</masterLabel>
+        <translation><!-- City of Seattle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Tacoma</masterLabel>
+        <translation><!-- City of Tacoma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Troutdale</masterLabel>
+        <translation><!-- City of Troutdale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Vancouver</masterLabel>
+        <translation><!-- City of Vancouver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Wilsonville</masterLabel>
+        <translation><!-- City of Wilsonville --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Wood Village</masterLabel>
+        <translation><!-- City of Wood Village --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gig Harbor</masterLabel>
+        <translation><!-- Gig Harbor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WES (Clackamas County)</masterLabel>
+        <translation><!-- WES (Clackamas County) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

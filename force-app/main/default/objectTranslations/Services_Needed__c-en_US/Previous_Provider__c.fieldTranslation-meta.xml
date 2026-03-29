@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Previous Provider --></label>
+    <name>Previous_Provider__c</name>
+    <picklistValues>
+        <masterLabel>Baker</masterLabel>
+        <translation><!-- Baker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mahoney</masterLabel>
+        <translation><!-- Mahoney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oregon Oils</masterLabel>
+        <translation><!-- Oregon Oils --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>River City</masterLabel>
+        <translation><!-- River City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scout</masterLabel>
+        <translation><!-- Scout --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
