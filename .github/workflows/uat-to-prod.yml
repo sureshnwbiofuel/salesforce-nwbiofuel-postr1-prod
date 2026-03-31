@@ -1,0 +1,35 @@
+name: UAT to Prod Automation
+
+on:
+  push:
+    branches: [ uat ] # ONLY runs when code is pushed/merged into uat
+
+jobs:
+  deploy-to-prod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Salesforce CLI
+        run: npm install @salesforce/cli --global
+
+      - name: Authenticate Production Org
+        run: |
+          echo "${{ secrets.SFDX_PROD_AUTH_URL }}" > sfdx_auth.txt
+          sf org login sfdx-url --sfdx-url-file sfdx_auth.txt --alias prod --set-default
+
+      - name: Sync UAT to Main Branch
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git fetch origin main
+          git checkout main
+          git merge uat
+          git push origin main
+
+      - name: Deploy to Production
+        # Use --test-level RunLocalTests for Production safety!
+        run: sf project deploy start --manifest manifest/package.xml --target-org prod --ignore-conflicts --test-level RunLocalTests
