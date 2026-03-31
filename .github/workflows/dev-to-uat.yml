@@ -1,0 +1,38 @@
+name: Dev to UAT Automation
+on:
+  push:
+    branches: [ dev ] # Runs when code is merged into dev
+
+jobs:
+  deploy-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Pull the code from GitHub onto the runner
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Gets all history so we can merge
+
+      # 2. Install the Salesforce CLI tools
+      - name: Install Salesforce CLI
+        run: npm install @salesforce/cli --global
+
+      # 3. Use the Secret to log into the UAT Sandbox
+      - name: Authenticate UAT Sandbox
+        run: |
+          echo "${{ secrets.SFDX_UAT_AUTH_URL }}" > sfdx_auth.txt
+          sf org login sfdx-url --sfdx-url-file sfdx_auth.txt --alias uat --set-default
+
+      # 4. Automatically merge the new 'dev' code into the 'uat' branch
+      - name: Sync Dev to UAT Branch
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git fetch origin uat
+          git checkout uat
+          git merge dev
+          git push origin uat
+
+      # 5. Deploy the changes to the actual UAT Salesforce Org
+      - name: Deploy to UAT Sandbox
+        run: sf project deploy start --manifest manifest/package.xml --target-org uat
