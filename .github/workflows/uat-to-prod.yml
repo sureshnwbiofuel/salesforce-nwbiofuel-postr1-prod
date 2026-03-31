@@ -1,0 +1,41 @@
+name: UAT to Prod Automation
+
+on:
+  pull_request:
+    branches: [ main ]  # Only look at PRs targeting the 'main' branch
+    types: [ closed ]    # Only fire when the PR is actually merged/closed
+
+jobs:
+  deploy-to-prod:
+    # CRITICAL: This ensures the job ONLY runs if the PR was actually MERGED.
+    # If a PR is closed without merging, the deployment will not run.
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout the code from the 'main' branch (where the code was just merged)
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. Install the Salesforce CLI tools
+      - name: Install Salesforce CLI
+        run: npm install @salesforce/cli --global
+
+      # 3. Use the Secret to log into the Production Org
+      - name: Authenticate Production Org
+        run: |
+          echo "${{ secrets.SFDX_PROD_AUTH_URL }}" > sfdx_auth.txt
+          sf org login sfdx-url --sfdx-url-file sfdx_auth.txt --alias prod --set-default
+
+      # 4. Deploy to Production
+      # We use --test-level RunLocalTests because Salesforce requires tests for Prod.
+      # We use --wait 30 to give complex Production deployments time to finish.
+      - name: Deploy to Production
+        run: |
+          sf project deploy start \
+            --manifest manifest/package.xml \
+            --target-org prod \
+            --ignore-conflicts \
+            --test-level RunLocalTests \
+            --wait 30
